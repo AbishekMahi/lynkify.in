@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+html {
+    height: 100vh;
+    margin: 0;
+    background-color: black !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.footer__subscribe-input input {
+    /* width: 300px !important; */
+    padding: 0 20px !important;
+    padding-right: 55px !important;
+}
+
+.lottie {
+    width: 150px;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h2 {
+    font-size: 2rem !important;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+}
+
+.center-line {
+    width: 70%;
+    display: none !important;
+}
+
+.bg-image {
+    background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/02/c2/00/02c2003d-2bf8-32f1-ca21-9e67a2f92560/cover.jpg/1200x1200bf-60.jpg");
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainbanner {
+    background-image: url("https://abishekmahi.github.io/Lynkify/main.png");
+    /* filter: blur(20px);
+    -webkit-filter: blur(20px); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.logo {
+    position: fixed;
+    top: 35px;
+    left: 40px;
+    z-index: 3;
+}
+.make {
+    position: fixed;
+    top: 35px;
+    right: 40px !important;
+    z-index: 3;
+}
+
+.logo h2 {
+    color: #fff !important;
+    /* font-size: larger; */
+}
+
+.content {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white !important;
+    height: 100vh;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    width: 100%;
+}
+
+.main-img {
+    width: 75%;
+}
+
+.main-btn,
+.right a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #e7e6ef;
+    border-radius: 6px;
+    padding: 12px 20px;
+    background: #3c3b3e74 !important;
+    margin-bottom: 15px;
+}
+
+.main-btn,
+.right a:hover {
+    width: 91%;
+    background: #9c99a474 !important;
+}
+
+.icons {
+    width: 26px !important;
+}
+
+.main-btn span {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.right {
+    max-height: 70vh;
+    overflow-y: visible;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-footer {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    bottom: .7rem;
+    z-index: 2;
+}
+
+.main-footer hr {
+    margin-top: 0 !important;
+    opacity: 30% !important;
+}
+
+.main-footer p {
+    color: #fff;
+    font-size: medium;
+    text-align: center;
+    margin: 0;
+}
+
+.far {
+    font-size: 22px;
+}
+
+.vid-cont {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.video {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    #song-info .logo {
+        display: none;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+
+    hr {
+        color: #fff;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        background-color: black;
+    }
+
+    .center-line {
+        width: 70%;
+        display: block !important;
+    }
+
+    .bg-image {
+        height: 100%;
+    }
+
+    .content {
+        background-image: linear-gradient(to bottom, #2f2f2f, #1A1A1A);
+        height: 100%;
+        position: relative;
+    }
+
+    .main-img {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
+    .right {
+        max-height: max-content;
+        align-items: center;
+    }
+
+    .main-btn,
+    .right a {
+        width: 100%;
+    }
+
+    .main-btn,
+    .right a:hover {
+        width: 100% !important;
+    }
+
+    .main-footer {
+        position: relative;
+        padding-bottom: 0 !important;
+    }
+
+    .main-footer p {
+        color: #fff;
+        font-size: medium;
+        text-align: center;
+        margin: 0;
+    }
+
+    .far {
+        font-size: 20px;
+    }
+
+    .vid-cont {
+        margin-bottom: 80px;
+    }
+
+    .video {
+        width: 100%;
+        height: 100%;
+    }
+
+}
